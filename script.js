@@ -17,7 +17,7 @@ let computerFinalScore = 0;
 // Image element helper function
 const createImgEl = function (iconName) {
     let imgEl = document.createElement('img');
-    imgEl.src = `/images/icon-${iconName}.svg`;
+    imgEl.src = `images/icon-${iconName}.svg`;
     imgEl.style.height = '9rem';
     return imgEl;
 };
