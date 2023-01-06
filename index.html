@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Rock, paper, and scissors game</title>
+    </head>
+    <body>
+        <header class="header-title">Rock, paper, & scissors</header>
+        <main>
+            <section class="player user-player">
+                <div class="score score--0">0</div>
+                <div class="bet bet--0">?</div>
+                <p class="name">you</p>
+            </section>
+            <p class="game-message"></p>
+            <section class="player computer-player">
+                <div class="score score--1">0</div>
+                <div class="bet bet--1">?</div>
+                <p class="name">computer</p>
+            </section>
+
+            <section class="btns-game">
+                <button class="btn btn-rock">
+                    <img src="/images/icon-rock.svg" class="btn-icon" />
+                </button>
+                <button class="btn btn-paper">
+                    <img src="/images/icon-paper.svg" class="btn-icon" />
+                </button>
+                <button class="btn btn-scissors">
+                    <img src="/images/icon-scissors.svg" class="btn-icon" />
+                </button>
+            </section>
+            <button class="btn btn-reset">new game</button>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

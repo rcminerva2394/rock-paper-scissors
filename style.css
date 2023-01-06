@@ -1,0 +1,157 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 3rem;
+    background-color: rgb(23, 59, 92);
+    height: 100dvh;
+    height: 100vh;
+    line-height: 1;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    padding-top: 4rem;
+}
+
+.header-title {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+/*****************************/
+/* ALL ABOUT PLAYERS - USER & COMPUTER */
+main {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    padding-top: 4rem;
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.player {
+    display: grid;
+    justify-items: center;
+    gap: 3rem;
+}
+
+.score {
+    background-color: #dce8f3;
+    padding: 0.5rem 0.4rem;
+    width: 12rem;
+    text-align: center;
+    color: #14202c;
+    border-radius: 0.5rem;
+}
+
+.bet {
+    background-color: #d9d9d9;
+    color: #807c7c;
+    font-size: 8rem;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: -1rem;
+}
+
+.game-message {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+/* BUTTON GAMES */
+.btns-game {
+    grid-column: 1 / -1;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.btns-game button:nth-child(1) {
+    border: 0.4rem solid #ff0404;
+}
+
+.btns-game button:nth-child(2) {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    border: 0.4rem solid #2e8dfd;
+}
+
+.btns-game button:nth-child(3) {
+    border: 0.4rem solid #f4a446;
+}
+
+.btn {
+    padding: 2rem;
+    border: 0;
+    border-radius: 2rem;
+    background-color: rgba(146, 142, 142, 0.5);
+    box-shadow: 0 1.5rem 2rem rgb(13, 27, 56);
+}
+
+.btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 1rem 1rem rgb(13, 27, 56);
+}
+
+.btn.btn-reset {
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -8rem;
+    border-radius: 0.5rem;
+}
+
+path {
+    fill: red;
+}
+
+.btn-icon {
+    height: 7rem;
+    width: 6rem;
+    color: red;
+}
+
+/**** MEDI QUERIES *******/
+@media (max-width: 86.5em) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 67em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 47em) {
+    html {
+        font-size: 43.75%;
+    }
+
+    .header-title {
+        margin-bottom: 5rem;
+    }
+}
