@@ -13,4 +13,4 @@ But I ended up coding it differently,
 ![final flow](/flow-charts/final-flow.png)
 
 The style is inspired from fronendmentor.
-I coded the JS part probably for 5 hrs and for HTML, CSS 5 hours. I really learned how important it is to understand the problem, even if my final code doesn't match my first flow chart. I tired to code it based on the first flow chart, but I ommitted repeated codes and tried to use one function that will compare the possibilities.
+I coded the JS part probably for 5 hrs and for HTML, CSS 5 hours. I really learned how important it is to understand the problem, even if my final code doesn't match my first flow chart. I tried to code it based on the first flow chart, but I omitted repeated codes and tried to use one function that will compare the possibilities.
