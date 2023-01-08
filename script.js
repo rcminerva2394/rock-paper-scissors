@@ -10,6 +10,7 @@ const score0 = document.querySelector('.score--0');
 const score1 = document.querySelector('.score--1');
 const gameMessageEl = document.querySelector('.game-message');
 const btnReset = document.querySelector('.btn-reset');
+const btnIcon = document.querySelector('.btn-icon');
 
 let userFinalScore = 0;
 let computerFinalScore = 0;
@@ -26,6 +27,10 @@ const disableBtns = function () {
     btnPaper.disabled = true;
     btnRock.disabled = true;
     btnScissors.disabled = true;
+    btnIcon.style.filter = 'grayscale(80%)';
+    btnRock.style.border = 'none';
+    btnPaper.style.border = 'none';
+    btnScissors.style.border = 'none';
 };
 
 // Check if anyone has reached 5 points
@@ -47,23 +52,12 @@ const computerChoice = function () {
     return GAMEARR[Math.trunc(Math.random() * 3)];
 };
 
-const computerBetColor = function (computerBet) {
-    if (computerBet === 'rock') {
-        bet1.style.border = '5px solid #FF0404';
-    } else if (computerBet === 'paper') {
-        bet1.style.border = '5px solid #2e8dfd';
-    } else if (computerBet === 'scissors') {
-        bet1.style.border = '5px solid #f4a446';
-    }
-};
-
 const whoWins = function (userBet, computerBet) {
     // Showing the img or icon
     bet0.textContent = '';
     bet0.appendChild(createImgEl(userBet));
     bet1.textContent = '';
     bet1.appendChild(createImgEl(computerBet));
-    computerBetColor(computerBet);
 
     /* DIFFERENT WINNING POSSIBILITIES */
     if (
@@ -104,7 +98,6 @@ const whoWins = function (userBet, computerBet) {
 btnRock.addEventListener('click', function () {
     const userBet = 'rock';
     let computerBet = computerChoice();
-    bet0.style.border = '5px solid #FF0404';
     whoWins(userBet, computerBet);
 });
 
@@ -112,7 +105,6 @@ btnRock.addEventListener('click', function () {
 btnPaper.addEventListener('click', function () {
     const userBet = 'paper';
     let computerBet = computerChoice();
-    bet0.style.border = '5px solid #2e8dfd';
     whoWins(userBet, computerBet);
 });
 
@@ -120,7 +112,6 @@ btnPaper.addEventListener('click', function () {
 btnScissors.addEventListener('click', function () {
     const userBet = 'scissors';
     let computerBet = computerChoice();
-    bet0.style.border = '5px solid #f4a446';
     whoWins(userBet, computerBet);
 });
 
@@ -136,4 +127,7 @@ btnReset.addEventListener('click', function () {
     bet0.textContent = '?';
     bet1.textContent = '?';
     gameMessageEl.textContent = '';
+    btnRock.style.border = '0.4rem solid #ff0404';
+    btnPaper.style.border = '0.4rem solid #2e8dfd';
+    btnScissors.style.border = '0.4rem solid #f4a446';
 });

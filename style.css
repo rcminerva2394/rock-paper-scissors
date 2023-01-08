@@ -123,9 +123,9 @@ main {
     border-radius: 0.5rem;
 }
 
-path {
+/* path {
     fill: red;
-}
+} */
 
 .btn-icon {
     height: 7rem;
